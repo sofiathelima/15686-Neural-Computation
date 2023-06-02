@@ -1,0 +1,12 @@
+function [  ] = show_images( ims, rows, cols, title, figure)
+
+n = size(ims, 3);
+
+
+
+for i=1:n
+    subaxis(rows, cols, i, 'Spacing', .0, 'Padding', 0, 'Margin', 0);
+    imshow(ims(:,:,i));
+end
+
+mtit

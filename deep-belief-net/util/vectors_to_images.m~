@@ -1,0 +1,20 @@
+function [ output_args ] = vectors_to_images( vectors, image_dim1, image_dim2 )
+%VECTORS_TO_IMAGES Summary of this function goes here
+%   Detailed explanation goes here
+
+[n, p] = size(data);
+
+if(image_dim1*image_dim2 ~= p)
+    error(['The product of the dimensions of the image does not equal '
+            'the number of pixels in the data.  '
+            'Make sure the following is true of the parameters: '
+            'image_dim1*image_dim2=size(data,2)']);
+end
+
+images = zeros(image_dim1,image_dim2,n);
+
+o = zeros(
+
+
+end
+
